@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+                <form action="auth.php" method="post">
+                    <input type="text" name="search" id="search" class="searchPlace form-controll" placeholder="Укажіть ім'я для пошуку">
+                    <button class="btn btn-primary" type="submit">Знайти</button>
+                </form>
+                <a href="#">#user</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <ul class="teachers_list">
+                    <h4>
+                        Список дисциплін:
+                    </h4>
+                    <li class="teacher">
+                        <p>id</p>
+                        <p>Name</p>
+                    </li>
+
+                </ul>
+            </div>
+            
+            <div class="card" style="margin-top: 10px;">
+                <div class="new_teach">
+                    <form action="" method="post">
+                        <input type="text" placeholder="Назва" style="width: 60%;">
+                        <button type="submit" class="btn btn-outline-primary">Додати дисципліну</button>
+                    </form>
+                    <form action="" method="post" style="margin-top: 20px;">
+                        <select class="custom-select custom-select-sm" style="width: 60%;">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button type="submit" class="btn btn-danger" style="margin-left:10px;">Видалити</button>
+                    </form>
+                </div>
+            </div>
+        
+        
+        </div>
+    </section>
+
+    <section style="margin-top: 40px;">
+        <div class="container">
+            <div class="card">
+                <ul class="teachers_list">
+                    <h4>
+                        Список груп:
+                    </h4>
+                    <li class="teacher">
+                            <p>id</p>
+                            <p>Name</p>
+                            <p>size</p>
+                            <p>course</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="card" style="margin-top: 10px;">
+                <div class="new_teach">
+                    <form action="" method="post">
+                        <input type="text" placeholder="Шифр">
+                        <input type="text" placeholder="Курс">
+                        <input type="text" placeholder="Розмір групи">
+                        <button type="submit" class="btn btn-outline-primary" style="margin-left: 25px; padding-left: 6px; padding-right: 6px;">Додати групу</button>
+                    </form>
+                    <form action="" method="post" style="margin-top: 20px;">
+                        <select class="custom-select custom-select-sm" style="width: 60%;">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button type="submit" class="btn btn-danger" style="margin-left:10px;">Видалити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section style="margin-top: 40px;">
+        <div class="container">
+            <div class="card">
+                <ul class="teachers_list">
+                    <h4>
+                        Дані викладачів:
+                    </h4>
+                    <li class="teacher">
+
+                            <p>id</p>
+                            <p>Name</p>
+                            <p>Contacts</p>
+
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="card" style="margin-top: 10px;">
+                <div class="new_teach">
+                    <form action="" method="post">
+                        <input type="text" placeholder="Ім'я">
+                        <input type="text" placeholder="Контактні дані" style="width: 140px;">
+                        <input type="text" placeholder="Пароль">
+                        <button type="submit" class="btn btn-outline-primary">Додати викладача</button>
+                    </form>
+                    <form action="" method="post" style="margin-top: 20px;">
+                        <select class="custom-select custom-select-sm" style="width: 60%;">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button type="submit" class="btn btn-danger" style="margin-left:10px;">Видалити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section style="margin-top: 300px;">
+        <div class="nplan">
+            <h4 style="float: left;">Передбачено навчальним планом</h4>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Дисципліна</th>
+                    <th scope="col">Шифр</th>
+                    <th scope="col">Лк</th>
+                    <th scope="col">Пр</th>
+                    <th scope="col">Лб</th>
+                    <th scope="col">Курс.Роб.</th>
+                    <th scope="col">Практ.</th>
+                    <th scope="col">Розрах</th>
+                    <th scope="col">Зал.</th>
+                    <th scope="col">Екз.</th>
+                    <th scope="col">Аспірант</th>
+                    <th scope="col">Інше</th>
+                    <th scope="col">Семестр</th>
+                  </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+              </table>
+        </div>
+          
+        <div class="nteach">
+            <h4 style="float: left;">Обсяг навантаження викладачів</h4>
+            
+              <form action="" method="get">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Дисципліна</th>
+                        <th scope="col">Шифр</th>
+                        <th scope="col">Лк</th>
+                        <th scope="col">Пр</th>
+                        <th scope="col">Лб</th>
+                        <th scope="col">Конс.Сем.</th>
+                        <th scope="col">Конс.Екз.</th>
+                        <th scope="col">Розр.Роб.</th>
+                        <th scope="col">Залік</th>
+                        <th scope="col">Екз.</th>
+                        <th scope="col">Практ.</th>
+                        <th scope="col">Дипл. Зах.</th>
+                        <th scope="col">Аспірант</th>
+                        <th scope="col">Інше</th>
+                        <th scope="col">Семестр</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col">
+                                <select class="custom-select custom-select-sm">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </th>
+                            <th scope="col"><select class="custom-select custom-select-sm">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select></th>
+                            <th scope="col">
+                                <input type="text" value="Лк" class="mod-input-sm" name="lections">
+                            </th>
+                            <th scope="col">
+                                <input type="text" value="Пр" class="mod-input-sm" name="practics">
+                            </th>
+                            <th scope="col">
+                                <input type="text" value="Лб" class="mod-input-sm" name="labs">
+                            </th>
+                            <th scope="col">
+                                <input type="text" value="Конс.Сем." class="mod-input-sm" name="ksem">
+                            </th>
+                            <th scope="col">
+                                <input type="text" value="Конс.Екз." class="mod-input-sm" name="kexam"></th>
+                            <th scope="col">
+                                <input type="text" value="Розр.Роб." class="mod-input-sm" name="rozrob"></th>
+                            <th scope="col">
+                                <input type="text" value="Залік" class="mod-input-sm" name="zalik"></th>
+                            <th scope="col">
+                                <input type="text" value="Екз." class="mod-input-sm" name="exam"></th>
+                            <th scope="col">
+                                <input type="text" value="Практ." class="mod-input-sm" name="_pract"></th>
+                            <th scope="col">
+                                <input type="text" value="Дипл.Зах." class="mod-input-sm" name="dzah"></th>
+                            <th scope="col">
+                                <input type="text" value="Аспірант" class="mod-input-sm" name="aspirant"></th>
+                            <th scope="col">
+                                <input type="text" value="Інше" class="mod-input-sm" name="other"></th>
+                            <th scope="col">
+                                <input type="text" value="Семестр" class="mod-input-sm" name="semestr"></th>
+                          </tr>
+
+
+                    </tbody>
+                  </table>
+                  <button type="submit" class="btn btn-primary" style="">Оновити</button>
+              </form>
+        </div>
+        <div class="addform" style="margin-top: 20px;">
+            <h4 style="display: block;">Додати нові дані</h4>
+            <br>
+            <form action="t_add.php" method="post" style="text-align: center;">
+                <select class="custom-select custom-select" name="" style="width: 400px;">
+                    <option selected>Оберіть дисципліну , що потрібно внести</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <br>
+                <select class="custom-select custom-select" name="" style="margin-top: 10px; width: 400px;">
+                    <option selected>Оберіть групу для якої потрібно ввести дані</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <br>
+                <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Додати</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
